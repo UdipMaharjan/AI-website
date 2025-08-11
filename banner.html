@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Projects Hub</title>
+</head>
+<body>
+    <div class="banner-container" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; width: 95%; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: #FFD700; padding: 5rem 2rem; text-align: center; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden; border-radius: 16px; margin: 2rem 0; isolation: isolate; border: 1px solid rgba(255, 215, 0, 0.2);">
+        <div class="corner-decoration" style="position: absolute; width: 100px; height: 100px; border: 2px solid rgba(255, 215, 0, 0.2); pointer-events: none; top: 20px; left: 20px; border-right: none; border-bottom: none; border-radius: 16px 0 0 0;"></div>
+        <div class="corner-decoration" style="position: absolute; width: 100px; height: 100px; border: 2px solid rgba(255, 215, 0, 0.2); pointer-events: none; bottom: 20px; right: 20px; border-left: none; border-top: none; border-radius: 0 0 16px 0;"></div>
+        
+        <div class="banner-content" style="max-width: 900px; margin: 0 auto; position: relative;">
+            <h1 class="banner-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1.5rem; background: linear-gradient(to right, #FFD700, #FFEC8B); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1.2; letter-spacing: -0.03em; text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);">AI Innovations Frontier</h1>
+            <p class="banner-subtitle" style="font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 400; max-width: 700px; margin: 0 auto 2.5rem; line-height: 1.6; opacity: 0.9; color: rgba(255, 255, 255, 0.85); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);">
+                Explore groundbreaking <span class="banner-highlight" style="background: linear-gradient(to right, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1)); color: #FFD700; padding: 0.25rem 0.75rem; border-radius: 6px; font-weight: 500; backdrop-filter: blur(4px); border: 1px solid rgba(255, 215, 0, 0.3); display: inline-block; transition: all 0.3s ease; position: relative; overflow: hidden;">AI research</span> 
+                <span class="ai-icon" style="font-size: 1.4em; vertical-align: middle; margin: 0 0.5rem; display: inline-block; animation: float 4s ease-in-out infinite; color: #FFD700;">⚡</span> and transformative <span class="banner-highlight" style="background: linear-gradient(to right, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1)); color: #FFD700; padding: 0.25rem 0.75rem; border-radius: 6px; font-weight: 500; backdrop-filter: blur(4px); border: 1px solid rgba(255, 215, 0, 0.3); display: inline-block; transition: all 0.3s ease; position: relative; overflow: hidden;">machine learning</span> projects 
+                <span class="ai-icon" style="font-size: 1.4em; vertical-align: middle; margin: 0 0.5rem; display: inline-block; animation: float 4s ease-in-out infinite; color: #FFD700;">🤖</span> shaping our future
+            </p>
+            <button class="banner-button" style="background: linear-gradient(to right, #FFD700, #FFC000); color: #1a1a1a; border: none; padding: 0.9rem 2.2rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1); box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3); position: relative; overflow: hidden;">Discover Latest Developments</button>
+        </div>
+    </div>
+
+    <style>
+        @keyframes shine {
+            100% { transform: translateX(100%); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .banner-highlight:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+        }
+        .banner-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 215, 0, 0.4);
+            background: linear-gradient(to right, #FFEC8B, #FFD700);
+        }
+        .banner-button:active {
+            transform: translateY(1px);
+        }
+        @media (max-width: 768px) {
+            .banner-container {
+                padding: 3rem 1.5rem !important;
+                border-radius: 12px !important;
+            }
+            .banner-button {
+                padding: 0.8rem 1.8rem !important;
+                font-size: 1rem !important;
+            }
+        }
+    </style>
+</body>
+</html>
