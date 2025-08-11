@@ -1,160 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top AI Projects - Team Collaboration</title>
+    <title>AI Projects Hub</title>
+</head>
+<body>
+    <div class="banner-container" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; width: 95%; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: #FFD700; padding: 5rem 2rem; text-align: center; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden; border-radius: 16px; margin: 2rem 0; isolation: isolate; border: 1px solid rgba(255, 215, 0, 0.2);">
+        <div class="corner-decoration" style="position: absolute; width: 100px; height: 100px; border: 2px solid rgba(255, 215, 0, 0.2); pointer-events: none; top: 20px; left: 20px; border-right: none; border-bottom: none; border-radius: 16px 0 0 0;"></div>
+        <div class="corner-decoration" style="position: absolute; width: 100px; height: 100px; border: 2px solid rgba(255, 215, 0, 0.2); pointer-events: none; bottom: 20px; right: 20px; border-left: none; border-top: none; border-radius: 0 0 16px 0;"></div>
+        
+        <div class="banner-content" style="max-width: 900px; margin: 0 auto; position: relative;">
+            <h1 class="banner-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1.5rem; background: linear-gradient(to right, #FFD700, #FFEC8B); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1.2; letter-spacing: -0.03em; text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);">AI Innovations Frontier</h1>
+            <p class="banner-subtitle" style="font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 400; max-width: 700px; margin: 0 auto 2.5rem; line-height: 1.6; opacity: 0.9; color: rgba(255, 255, 255, 0.85); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);">
+                Explore groundbreaking <span class="banner-highlight" style="background: linear-gradient(to right, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1)); color: #FFD700; padding: 0.25rem 0.75rem; border-radius: 6px; font-weight: 500; backdrop-filter: blur(4px); border: 1px solid rgba(255, 215, 0, 0.3); display: inline-block; transition: all 0.3s ease; position: relative; overflow: hidden;">AI research</span> 
+                <span class="ai-icon" style="font-size: 1.4em; vertical-align: middle; margin: 0 0.5rem; display: inline-block; animation: float 4s ease-in-out infinite; color: #FFD700;">⚡</span> and transformative <span class="banner-highlight" style="background: linear-gradient(to right, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1)); color: #FFD700; padding: 0.25rem 0.75rem; border-radius: 6px; font-weight: 500; backdrop-filter: blur(4px); border: 1px solid rgba(255, 215, 0, 0.3); display: inline-block; transition: all 0.3s ease; position: relative; overflow: hidden;">machine learning</span> projects 
+                <span class="ai-icon" style="font-size: 1.4em; vertical-align: middle; margin: 0 0.5rem; display: inline-block; animation: float 4s ease-in-out infinite; color: #FFD700;">🤖</span> shaping our future
+            </p>
+            <button class="banner-button" style="background: linear-gradient(to right, #FFD700, #FFC000); color: #1a1a1a; border: none; padding: 0.9rem 2.2rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1); box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3); position: relative; overflow: hidden;">Discover Latest Developments</button>
+        </div>
+    </div>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: gold;
-            margin: 0;
-            padding: 0;
-            padding-bottom: 80px;
-            /* Add space for fixed footer */
+        @keyframes shine {
+            100% { transform: translateX(100%); }
         }
-
-        #home-nav {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(20px);
-            border: 1px solid #d4af37;
-            border-radius: 50px;
-            padding: 12px 20px;
-            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
-            z-index: 1000;
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
         }
-
-        #home-nav a {
-            color: #d4af37;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-            padding: 12px 24px;
-            margin: 0 4px;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        #home-nav a:hover {
-            color: #000;
-            background: linear-gradient(45deg, #d4af37, #ffd700);
+        .banner-highlight:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
         }
-
-        #home-nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: #ffd700;
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
+        .banner-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 215, 0, 0.4);
+            background: linear-gradient(to right, #FFEC8B, #FFD700);
         }
-
-        #home-nav a:hover::after {
-            width: 80%;
+        .banner-button:active {
+            transform: translateY(1px);
         }
-
-        #home-nav a.active {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        @media (max-width: 768px) {
+            .banner-container {
+                padding: 3rem 1.5rem !important;
+                border-radius: 12px !important;
+            }
+            .banner-button {
+                padding: 0.8rem 1.8rem !important;
+                font-size: 1rem !important;
+            }
         }
     </style>
-</head>
-
-<body>
-    <!-- Navigation - Friend 1 will work here -->
-    <nav id="home-nav">
-        <!-- Khrishman (feature/home-nav) works here -->
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <!-- Khrishman (feature/home-nav) works here -->
-    <header>
-        <nav id="home-nav">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Banner - Friend 3 will work here -->
-    <section id="home-banner">
-        <!-- Prabesh (feature/home-banner) works here -->
-    </section>
-
-    <!-- About - Friend 4 will work here -->
-    <section id="home-about">
-        <!-- Saransh (feature/home-about) works here -->
-         <h1 style="font-size: 3em; margin-bottom: 10px; color: #ffd700; border-bottom: 2px solid #ffd700; display: inline-block; padding-bottom: 10px; text-align: center;">
-  Top AI Projects of 2025
-</h1>
-
-<p style="color: #ccc; margin-bottom: 40px; font-size: 1.1em; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-  Discover the most groundbreaking and innovative artificial intelligence projects that are shaping the future in 2025.
-</p>
-
-<div style="display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 900px; margin: 0 auto;">
-  <div style="background: #1a1a1a; padding: 20px; border-left: 5px solid #ffd700; border-radius: 10px;">
-    <h2 style="margin: 0 0 10px; font-size: 1.5em; color: #ffd700;">1. NeuroLink Health AI</h2>
-    <p style="margin: 0; color: #bbb;">AI-powered neural diagnostics and personalized treatment plans revolutionizing global healthcare.</p>
-  </div>
-
-  <div style="background: #1a1a1a; padding: 20px; border-left: 5px solid #ffd700; border-radius: 10px;">
-    <h2 style="margin: 0 0 10px; font-size: 1.5em; color: #ffd700;">2. SynthoVoice Ultra</h2>
-    <p style="margin: 0; color: #bbb;">Next-gen voice AI that perfectly mimics human emotion and intonation for communication and accessibility.</p>
-  </div>
-
-  <div style="background: #1a1a1a; padding: 20px; border-left: 5px solid #ffd700; border-radius: 10px;">
-    <h2 style="margin: 0 0 10px; font-size: 1.5em; color: #ffd700;">3. AetherPilot</h2>
-    <p style="margin: 0; color: #bbb;">Autonomous AI system for managing air traffic and drone fleets in real-time urban environments.</p>
-  </div>
-
-  <div style="background: #1a1a1a; padding: 20px; border-left: 5px solid #ffd700; border-radius: 10px;">
-    <h2 style="margin: 0 0 10px; font-size: 1.5em; color: #ffd700;">4. CodeGenius 2.0</h2>
-    <p style="margin: 0; color: #bbb;">An AI co-developer trained on multi-language repos to deliver secure, optimized code with zero bugs.</p>
-  </div>
-
-  <div style="background: #1a1a1a; padding: 20px; border-left: 5px solid #ffd700; border-radius: 10px;">
-    <h2 style="margin: 0 0 10px; font-size: 1.5em; color: #ffd700;">5. EcoLogic AI</h2>
-    <p style="margin: 0; color: #bbb;">A climate-aware AI system optimizing energy, waste, and emissions for sustainable smart cities.</p>
-  </div>
-</div>
-
-    </section>
-
-    <!-- Projects - Friend 2 will work here -->
-    <section id="home-projects">
-        <!-- Raynard (feature/home-projects) works here -->
-    </section>
-
-    <!-- Footer -->
-    <footer
-        style="background-color: #000; color: gold; text-align: center; padding: 20px 0; box-shadow: 0 -2px 5px rgba(255, 215, 0, 0.3); position: fixed; width: 100%; bottom: 0; left: 0;">
-        <nav>
-            <a href="#home" style="color: gold; margin: 0 15px; font-weight: bold; text-decoration: none;">Home</a>
-            <a href="#about" style="color: gold; margin: 0 15px; font-weight: bold; text-decoration: none;">About</a>
-            <a href="#projects"
-                style="color: gold; margin: 0 15px; font-weight: bold; text-decoration: none;">Projects</a>
-        </nav>
-        <p style="margin-top: 10px; font-size: 14px; margin-bottom: 0;">&copy; 2025 Udip Team. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>
